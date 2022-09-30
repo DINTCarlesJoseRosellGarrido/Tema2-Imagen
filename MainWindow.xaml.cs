@@ -24,5 +24,40 @@ namespace Tema2_Imagen
         {
             InitializeComponent();
         }
+
+        private void radioButtonAlta_Checked(object sender, RoutedEventArgs e)
+        {
+            imagen.Opacity = 1;
+        }
+
+        private void radioButtonMedia_Checked(object sender, RoutedEventArgs e)
+        {
+            imagen.Opacity = 0.66;
+        }
+
+        private void radioButtonBaja_Checked(object sender, RoutedEventArgs e)
+        {
+            imagen.Opacity = 0.33;
+        }
+
+        private void buttonRelleno_Checked(object sender, RoutedEventArgs e)
+        {
+            imagen.Stretch = Stretch.Fill;
+        }
+
+        private void buttonUniforme_Checked(object sender, RoutedEventArgs e)
+        {
+            imagen.Stretch = Stretch.Uniform;
+        }
+
+        private void buttonRellenoUniforme_Checked(object sender, RoutedEventArgs e)
+        {
+            imagen.Stretch = Stretch.UniformToFill;
+        }
+
+        private void buttonSinAjuste_Checked(object sender, RoutedEventArgs e)
+        {
+            imagen.Stretch = Stretch.None;
+        }
     }
 }
